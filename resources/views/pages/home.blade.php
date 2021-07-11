@@ -123,7 +123,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-3 col-lg-3 col-xl-3 bounceInRight" style="text-align: center">
+                <div class="col-md-3 col-lg-3 col-xl-3 wow bounceInRight" style="text-align: center">
                     <div class="row">
                         <a href="{{ URL::to('/review/' . $mostlike_review[4]->review_slug) }}">
                                 <img class="myimg"
