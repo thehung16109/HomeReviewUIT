@@ -15,6 +15,7 @@
 </ul>
 <b>Tiến hành các bước</b><br>
 <b>Bước 1: Git clone dự án về máy, sau đó cd tới đường dẫn của bạn</b><br>
+<p>Khi git về máy có thể sẽ mất file .env nên cần tạo lại, code của file .env được lưu trong folder với tên "code file.env.txt"</p>
 <b>Bước 2: Cài các gói composer</b><br>
 <p>Bạn vào cmd, gõ câu lệnh sau: <code>composer install</code> và chờ các gói được cài đặt xong</p>
 <b>Bước 3: Cài các gói npm</b>
