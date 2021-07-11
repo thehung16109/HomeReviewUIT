@@ -19,8 +19,8 @@
                                 value={{ $profile->customer_password }}>
                             <div class="col-md-5 col-lg-5 col-xl-5" style="text-align: center">
                                     <img class="d-flex mr-3 rounded-circle"
-                                        src="../uploads/CustomerAvatar/{{ $profile->customer_avatar }}" height="300"
-                                        width="300">
+                                        src="../uploads/CustomerAvatar/{{ $profile->customer_avatar }}" style="width: 200px;
+                                        height: 200px;">
                     
                                 <div class="mt-3">
                                     <form action="{{ URL::to('/change-customer-avatar/' . $profile->customer_id) }}" enctype="multipart/form-data"
