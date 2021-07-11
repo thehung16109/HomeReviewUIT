@@ -111,7 +111,7 @@
                             href="{{ URL::to('/review/' . $mostlike_review[0]->review_slug) }}">{{ $mostlike_review[0]->review_title }}</a>
                     </div>
                     </div>
-                    <div class="row mt-4" style="text-align: center; vertical-align:center;">
+                    <div class="row" style="text-align: center; vertical-align:center;margin-top: 38px;">
                         <div class="col-md-12 col-lg-12 col-xl-12">
                         <a href="{{ URL::to('/review/' . $mostlike_review[1]->review_slug) }}">
                                 <img height="100%" class="myimg"
