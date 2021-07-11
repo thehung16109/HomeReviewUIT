@@ -124,7 +124,7 @@
         </div>
     </section>
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $.ajaxSetup({
             headers: {
                 'X-CSRF-Token': $('meta[name=_token]').attr('content')
@@ -221,6 +221,6 @@
             });
             return false;
         });
-    </script>
+    </script> --}}
 
 @endsection

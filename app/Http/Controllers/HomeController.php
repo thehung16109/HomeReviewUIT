@@ -181,17 +181,22 @@ class HomeController extends Controller
             if(($cust->customer_id != $data['customer_id']) and ($cust->customer_email==$data['customer_email'])){
                 $output =  '<span style="color:red; font-weight: bold;">Địa chỉ email này đã tồn tại trong dữ liệu.</span>';
             }
-            else{
-                $customer->customer_email = $data['customer_email'];
-                $customer->customer_password = md5($data['customer_password']);
-
-                $customer->save();
-                $output = '<span style="color:red; font-weight: bold;">Cập nhật thông tin tài khoản thành công.</span>';
-            }
+            
         }
+
+        if ($output!='<span style="color:red; font-weight: bold;">Địa chỉ email này đã tồn tại trong dữ liệu.</span>')
+        {
+            $customer->customer_email = $data['customer_email'];
+            $customer->customer_password = md5($data['customer_password']);
+            $customer->save();
+            $output = '<span style="color:red; font-weight: bold;">Cập nhật thông tin tài khoản thành công.</span>';
+        }
+       
+                
         echo $output;
 
     }
+
 
     public function change_customer_avatar(Request $request, $customer_id){
         $data = $request->all();

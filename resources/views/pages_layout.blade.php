@@ -154,6 +154,104 @@
             $('#search-result').html('');
         });
     </script>
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-Token': $('meta[name=_token]').attr('content')
+            }
+        });
+
+        var clicked = 0;
+        $(document).ready(function() {
+
+            load_profile();
+            function load_edit_profile() {
+                var click_status = clicked;
+                var customer_last_name = $('.customer_last_name').val();
+                var customer_first_name = $('.customer_first_name').val();
+                var customer_email = $('.customer_email').val();
+                var _token = $('input[name="_token"]').val();
+                $.ajax({
+                    url: "{{ url('/edit-profile') }}",
+                    method: "POST",
+                    data: {
+                        click_status: click_status,
+                        customer_last_name: customer_last_name,
+                        customer_first_name: customer_first_name,
+                        customer_email: customer_email,
+                        _token: _token
+                    },
+                    success: function(data) {
+                        $('#show-edit-profile').html(data);
+                    }
+                });
+                return false;
+            }
+
+            function load_profile() {
+                var customer_id = $('.customer_id').val();
+                var _token = $('input[name="_token"]').val();
+                $.ajax({
+                    url: "{{ url('/load-profile') }}",
+                    method: "POST",
+                    data: {
+                        customer_id: customer_id ,
+                        _token: _token
+                    },
+                    success: function(data) {
+                        $('#profile_show').html(data);
+                    }
+                });
+                return false;
+            }
+
+            $('.edit-profile').click(function() {
+                if (clicked == 0) {
+                    clicked = 1;
+                    load_edit_profile();
+                    load_profile();
+                } else {
+                    clicked = 0;
+                    load_edit_profile();
+                    load_profile();
+                }
+                return false;
+            });
+
+        });
+    </script>
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-Token': $('meta[name=_token]').attr('content')
+            }
+        });
+        $(document).on('click', '.update-profile', function() {
+            var customer_id = $('.customer_id').val();
+            var customer_last_name = $('.last-name-new').val();
+            var customer_first_name = $('.first-name-new').val();
+            var customer_email = $('.email-new').val();
+            var customer_password = $('.pass-new').val();
+            var _token = $('input[name="_token"]').val();
+
+            $.ajax({
+                url: "{{ url('/update-profile') }}",
+                method: "POST",
+                data: {
+                    customer_id: customer_id,
+                    customer_last_name: customer_last_name,
+                    customer_first_name: customer_first_name,
+                    customer_email: customer_email,
+                    customer_password: customer_password,
+                    _token: _token
+                },
+                success: function(data) {
+                    $('#show-update-status').html(data);
+                }
+            });
+            return false;
+        });
+    </script>
 </body>
 
 </html>
