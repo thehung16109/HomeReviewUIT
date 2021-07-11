@@ -21,7 +21,9 @@
 <p>Gõ câu lệnh sau: <code>npm install</code> và chờ các gói được cài đặt xong</p>
 <b>Bước 4: Tạo key</b>
 <p>Gõ câu lệnh sau <code>php artisan key:generate</code></p>
-<b>Bước 5: Tạo database</b>
+<b>Bước 5: Update composer</b>
+<p>Gõ <code>composer update</code>để update composer</p>
+<b>Bước 6: Tạo database</b>
 <p>Gõ <code>php artisan migrate</code>để laravel đồng bộ với db và tạo sẵn table</p>
-<b>Bước 6: Chạy</b>
+<b>Bước 7: Chạy</b>
 <p>Trước khi chạy, cần phải mở WAMP, XAMP hoặc gì đó để bật Apache server, sau đó gõ php artisan serve. Web sẽ nằm trên localhost:8000.</p>
