@@ -93,16 +93,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.185.6",
+            "version": "3.185.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "35310302912fdc3b4a0e829b84424c41e3fd9727"
+                "reference": "667a83e4a18cb75db3ce74162efc97123da96261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/35310302912fdc3b4a0e829b84424c41e3fd9727",
-                "reference": "35310302912fdc3b4a0e829b84424c41e3fd9727",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/667a83e4a18cb75db3ce74162efc97123da96261",
+                "reference": "667a83e4a18cb75db3ce74162efc97123da96261",
                 "shasum": ""
             },
             "require": {
@@ -177,9 +177,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.10"
             },
-            "time": "2021-07-02T18:13:18+00:00"
+            "time": "2021-07-09T19:21:22+00:00"
         },
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2091,16 +2091,16 @@
         },
         {
             "name": "league/oauth1-client",
-            "version": "v1.9.0",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth1-client.git",
-                "reference": "1e7e6be2dc543bf466236fb171e5b20e1b06aee6"
+                "reference": "19a3ce488bb1547c906209e8293199ec34eaa5b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/1e7e6be2dc543bf466236fb171e5b20e1b06aee6",
-                "reference": "1e7e6be2dc543bf466236fb171e5b20e1b06aee6",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/19a3ce488bb1547c906209e8293199ec34eaa5b1",
+                "reference": "19a3ce488bb1547c906209e8293199ec34eaa5b1",
                 "shasum": ""
             },
             "require": {
@@ -2160,22 +2160,22 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/oauth1-client/issues",
-                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.9.0"
+                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.9.1"
             },
-            "time": "2021-01-20T01:40:53+00:00"
+            "time": "2021-07-07T22:54:46+00:00"
         },
         {
             "name": "maatwebsite/excel",
-            "version": "3.1.31",
+            "version": "3.1.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-                "reference": "cbe6370af70f93bd017f77ef92d32bd492a47fcb"
+                "reference": "9dc29b63a77fb7f2f514ef754af3a1b57e83cadf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/cbe6370af70f93bd017f77ef92d32bd492a47fcb",
-                "reference": "cbe6370af70f93bd017f77ef92d32bd492a47fcb",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/9dc29b63a77fb7f2f514ef754af3a1b57e83cadf",
+                "reference": "9dc29b63a77fb7f2f514ef754af3a1b57e83cadf",
                 "shasum": ""
             },
             "require": {
@@ -2228,7 +2228,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Maatwebsite/Laravel-Excel/issues",
-                "source": "https://github.com/Maatwebsite/Laravel-Excel/tree/3.1.31"
+                "source": "https://github.com/Maatwebsite/Laravel-Excel/tree/3.1.32"
             },
             "funding": [
                 {
@@ -2240,7 +2240,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-02T17:31:29+00:00"
+            "time": "2021-07-08T10:11:21+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
