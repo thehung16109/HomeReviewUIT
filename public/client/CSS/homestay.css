@@ -88,8 +88,9 @@ a.review-title-footer {
     color: white;
 }
 a.review-title-footer :hover {
-    font-weight: bold;
     color: #f68a39;
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 /* End Footer  */
@@ -128,7 +129,6 @@ a.tagimg:hover {
     color: #f68a39;
 }
 /*End Style for Image in list most view */
-
 
 /* Style for Image in list popular */
 img.myimg1 {
@@ -265,7 +265,7 @@ a:hover {
     color: #f68a39;
     font-weight: bold;
     margin-top: 63px;
-    padding: 10px 20px ;
+    padding: 10px 20px;
 }
 
 .btn:hover {
@@ -296,15 +296,17 @@ a:hover {
 }
 
 .carousel-inner a:hover {
-    font-weight: bolder;
+    color: #f68a39;
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
-.carousel-caption a h1{
+.carousel-caption a h1 {
     /* background: rgba(0, 0, 0, 0.5); */
     border-radius: 40px;
 }
 
-.carousel-caption h1{
+.carousel-caption h1 {
     background: rgba(0, 0, 0, 0.5);
     /* border-radius: 40px; */
 }
@@ -375,7 +377,6 @@ a:hover {
     height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #3e353578;
-    
 }
 
 .review-liked a {
@@ -520,7 +521,7 @@ a.lienhe:hover {
 .author_date a {
     color: black;
 }
-.author_date a:hover{
+.author_date a:hover {
     font-weight: bolder;
 }
 
@@ -533,7 +534,7 @@ a.lienhe:hover {
     color: black;
     text-align: center;
     vertical-align: middle;
-    height:35px
+    height: 35px;
 }
 
 .btn-share:hover {
@@ -562,8 +563,8 @@ a .tag-style {
     background-color: black;
 }
 
-a.tag-bread:hover{
-font-weight: bold;
+a.tag-bread:hover {
+    font-weight: bold;
 }
 
 /* Next and Prev post */
@@ -593,7 +594,7 @@ font-weight: bold;
     color: #8a8a8a;
     margin-bottom: 6px;
 }
-.next-prev-post .title a{
+.next-prev-post .title a {
     color: black;
 }
 
@@ -639,7 +640,6 @@ img .user-profile {
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-
 }
 
 .btn-comment.submit:hover {
@@ -661,7 +661,6 @@ img .user-profile {
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-
 }
 
 .btn-like.submit:hover {
@@ -693,10 +692,10 @@ img .user-profile {
 }
 
 .inputfile {
-	opacity: 0;
-	/* overflow: hidden; */
-	position: absolute;
-	z-index: -1; 
+    opacity: 0;
+    /* overflow: hidden; */
+    position: absolute;
+    z-index: -1;
 }
 
 .inputfile + label {
@@ -707,7 +706,6 @@ img .user-profile {
     cursor: pointer;
     border-radius: 20px;
     padding: 3px 20px;
-
 }
 
 .inputfile:focus + label,

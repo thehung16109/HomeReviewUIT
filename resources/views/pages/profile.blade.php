@@ -40,12 +40,14 @@
                             </div>
                             <div class="col-md-7 col-lg-7 col-xl-7">
                                 <form>
-                                <p style="text-align: center;font-size:40px; color:red; font-weight:bold">
-                                    {!! $profile->customer_last_name . ' ' . $profile->customer_first_name !!}</p>
-                                <p style="text-align: center; font-weight:bold; font-size:15px">Địa chỉ Email</p>
-                                <p style="text-align: center; font-weight:bold; font-size:20px">
-                                    {{ $profile->customer_email }}
+                                    <hr>
+                                <p style="text-align: left;font-size:20px; font-weight:bold">
+                                    Tên: {!! $profile->customer_last_name . ' ' . $profile->customer_first_name !!}</p>
+                                <hr>
+                                <p style="text-align: left;font-size:20px; font-weight:bold;">
+                                    Email: {{ $profile->customer_email }}
                                 </p>
+                                <hr>
                             </form>
                                 <form> 
                                 <div style="text-align:center">
