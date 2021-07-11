@@ -24,7 +24,7 @@
                 @endforeach
             </ul>
 
-            <div class="carousel-inner">
+            <div class="carousel-inner container p-0">
                 @foreach ($news_most_like as $key => $most_like)
                     <a href="{{ URL::to('/news/' . $most_like->news_slug) }}">
                         <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">

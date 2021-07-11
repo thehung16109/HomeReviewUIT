@@ -10,7 +10,7 @@
                 @endforeach
             </ul>
 
-            <div class="carousel-inner container px-0">
+            <div class="carousel-inner container p-0 px-0">
                 @foreach ($lastest_review as $key => $lastest_rev)
                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                         <a href="{{ URL::to('/review/' . $lastest_rev->review_slug) }}">

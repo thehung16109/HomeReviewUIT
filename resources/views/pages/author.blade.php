@@ -25,7 +25,7 @@
                 @endforeach
             </ul>
 
-            <div class="carousel-inner">
+            <div class="carousel-inner  container">
                 @foreach ($review_most_like as $key => $most_like)
 
                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">

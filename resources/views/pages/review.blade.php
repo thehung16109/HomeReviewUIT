@@ -38,7 +38,7 @@
                                         class={{ $key == 0 ? 'active' : '' }}></li>
                                 @endforeach
                             </ul>
-                            <div class="carousel-inner">
+                            <div class="carousel-inner container p-0">
                                 @foreach (explode('|', $review->review_images) as $key => $review_image)
                                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}" id="review_content">
                                  
